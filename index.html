@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Text Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark justify-content-center">
+    <div class="editor-toolbar d-flex align-items-center">
+      <button onclick="format('bold')" title="Bold"><i class="fas fa-bold"></i></button>
+      <button onclick="format('underline')" title="Underline"><i class="fas fa-underline"></i></button>
+      <button onclick="format('italic')" title="Italic"><i class="fas fa-italic"></i></button>
+      <input type="color" title="Font Color" onchange="changeColor(this.value)">
+      <button onclick="alignText('left')" title="Align Left"><i class="fas fa-align-left"></i></button>
+      <button onclick="alignText('center')" title="Align Center"><i class="fas fa-align-center"></i></button>
+      <button onclick="alignText('right')" title="Align Right"><i class="fas fa-align-right"></i></button>
+      <button onclick="alignText('justify')" title="Justify"><i class="fas fa-align-justify"></i></button>
+      <button onclick="undoAction()" title="Undo"><i class="fas fa-undo"></i></button>
+      <button onclick="redoAction()" title="Redo"><i class="fas fa-redo"></i></button>
+    </div>
+  </nav>
+
+  <div id="editor" class="editor-container" contenteditable="true">
+    Type your text here...
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

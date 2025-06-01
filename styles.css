@@ -1,0 +1,35 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.editor-toolbar {
+  background-color: #343a40;
+  padding: 10px 20px;
+}
+
+.editor-toolbar button,
+.editor-toolbar input[type="color"] {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.editor-toolbar button:hover,
+.editor-toolbar input[type="color"]:hover {
+  opacity: 0.7;
+}
+
+.editor-container {
+  margin: 30px auto;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 20px;
+  min-height: 300px;
+  width: 90%;
+  max-width: 1000px;
+}
